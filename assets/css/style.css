@@ -1,0 +1,233 @@
+/*Importar Fuentes*/
+@font-face{
+    font-family: "fajada";
+    src: url(../fonts/fuente.ttf) format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+/* Estilos generales */
+/*Establecer la pagina limpiando los margenes y los pading*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/*clase que limpia los flotados*/
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+body{
+    background: url(../img/cubes.png) #f4f4f4; /*Poner imagen de fondo*/
+}
+
+
+/*Estilos de la cabecera*/
+
+#cabecera{
+    width: 85%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto; /*Centrar el contenido*/
+    /*border: 1px solid black;*/
+}
+
+
+/*Logotipo*/
+#logo{
+    float: left; /*Se quede en la izquierda*/
+    width: 540px;
+    height: 80px;
+}
+#logo a{
+    font-family: "fajada", Helvetica;
+    font-size: 40px;
+    letter-spacing: 2px; /*Separar un espacio entre cada letra*/
+    color: #2979cd;
+    text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+    transition: all 500ms;
+    line-height: 80px;
+    margin-left: 10px;
+}
+
+#logo a:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -1px -1px 0px black, -2px -2px 0px black;
+}
+
+/*Menú*/
+
+#menu{
+    clear: both;
+    width: 100%;
+    height: 45px;
+    /*Color desvanecido*/
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
+    border: 1px solid #c9c9c9;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px #eeeeee;
+    overflow: hidden; /*Todo lo que salga no se ve*/
+
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li{
+    float: left;
+    line-height: 42px;
+    border-right: 1px solid #d6d6d6;
+}
+
+#menu ul a:hover{
+    /*Color desvanecido*/
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
+}
+
+#menu ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #696969;
+}
+
+/*Contenido Principal*/
+
+#contenedor{
+    width: 85%;
+    /*min-height: 900px;*/
+    margin: 0px auto; /*Centrar el contenido*/
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/*Barra lateral aside bar*/
+
+#sidebar{
+    float: right;
+    width: 27%;
+    height: auto;
+}
+
+.bloque{
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 1px #cccccc, 0px 3px 7px #cccccc, 0px 0px 1px #ffffff inset;
+}
+
+.bloque h3{
+    margin-bottom: 15px;
+}
+
+label,
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    display: block;
+    width: 95%;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+labe,
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type ="button"],
+input[type ="submit"]{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    border-radius: 5px;
+    
+    color: white;
+    background: #007ee5;
+    border: 1px solid #156785;
+    cursor: pointer;
+    padding: 6px;
+    
+}
+
+/*Principal*/
+
+#principal{
+    float: left;
+    width: 65%;
+    min-height: 490px;
+    background: white;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 1px #cccccc, 0px 3px 7px #cccccc, 0px 0px 1px #ffffff inset;
+}
+
+#principal a{
+    color: #333;
+}
+
+#principal h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #444;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #ccc;
+    font-family: "fajada";
+}
+
+#principal h2{
+    font-size: 20px;
+    margin-top: 25px;
+    color: #2979cd;
+    letter-spacing: 1px;
+    font-family: "fajada";
+}
+
+#principal p{
+    margin-top: 8px;
+}
+
+#ver_todas a{
+    display: block;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background: #007ee5;
+    border: 1px solid #156785;
+    cursor: pointer;
+    width: 165px;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+
+/*Pie de pagina*/
+
+#pie{
+    width: 85%;
+    clear: both;
+    margin: 0px auto;
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
+    border: 1px solid #c9c9c9;
+    border-bottom:none;
+    border-radius: 10px 10px 0px 0px;
+    color: #666666;
+    overflow: hidden;
+    height: auto;
+    padding: 16px;
+    text-align: center;
+}
